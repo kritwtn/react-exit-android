@@ -22,7 +22,7 @@ const LoginScreen = ({ navigation }) => {
   useEffect(() => {
     
     const backAction = () => {
-      Alert.alert("Hold on!", "Are you sure you want exit?", [
+      Alert.alert("Hold on!", "Are you sure you want exit [1]?", [
         {
           text: "Cancel",
           onPress: () => null,
@@ -41,10 +41,6 @@ const LoginScreen = ({ navigation }) => {
      return () => backHandler.remove();
 
     }, []);
-
-  useEffect(() => {
-    navigation.setOptions({ gestureEnabled: false });
-}, []);
 
   return (
     <SafeAreaView style={{ flex:1}}>
