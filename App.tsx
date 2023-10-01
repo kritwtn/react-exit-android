@@ -8,6 +8,7 @@ import Navigation from './src/Navigation'; // Import your navigation component
 const Stack = createStackNavigator();
 
 const App = () => {
+  
   return (
     <Provider store={store}>
       <Navigation />
